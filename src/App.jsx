@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import About from './pages/About';
-import Services from './pages/services';
+import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import WhatsappBulle from './components/WhatsappBulle';
 function App() {
