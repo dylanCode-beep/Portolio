@@ -48,10 +48,9 @@ export default function Hero() {
          initial={{opacity:0,x:20}}
         whileInView={{opacity:1,x:0}}
          viewport={{once:true}}
-        >Jeune étudiant camerounais,
-        titulaire d’un BTS en gestion des systèmes d’information. Passionné du numérique, je 
-        developpe et je conçois de solutions applicatives robustes, fiables et sécurisée qui 
-        repondent aux exigeneces exacte du client.
+        >Jeune étudiant camerounais, passionné du numérique, je 
+        développe et je conçois des solutions applicatives robustes, fiables et sécurisées qui 
+        repondent aux exigences exacte du client.
         </MotionText>
       </Box>
       <Box>

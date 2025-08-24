@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Text,Box, SimpleGrid, Image, HStack,Button, VStack } from "@chakra-ui/react";
+import { Text,Box, SimpleGrid, Image, Heading } from "@chakra-ui/react";
+import {Link} from 'react-router-dom'
 import { BsDisplay } from "react-icons/bs";
 
 const MotionText = motion(Text)
@@ -15,7 +16,7 @@ const projets = [
  {
   titre:"Blog",
   image:"/technologie-communication-icones-symboles-concept.jpg",
-  description:"Blog dynamique ave Laravel et React",
+  description:"Blog dynamique avec Laravel et React",
   link:"#"
  },
  {
@@ -59,48 +60,20 @@ export default function Portfolio(){
    whileInView={{opacity:1,y:0}}
    viewport={{once:true}}
    transition={{duration:1}}
->Voici quelques uns de mes projets recents que j'ai réalisé en developpement web et mobile</MotionText>   
+>Voici quelques uns de mes projets reçents que j'ai réalisé en developpement web et mobile</MotionText>   
 
-<HStack overflowX="auto" px={2} py={4} css={{"&::-webkit-scollbar":{display:"none"}}} spacing={3} p={5}>
-
- {projets.map((projets,index)=>(
-  <MotionBox
- key={index}
- borderRadius={'md'}
- overflow={'hidden'}
- shadow={'md'}
- whileHover={{y:-6,boxShadow:"0px 10px 20px rgba(0,0,0,0.2)"}}
-  initial={{opacity:0,y:50}}
-  transition={{type:"spring",stiffness:300}}
-  whileInView={{opacity:1,y:0}}
-  viewport={{once:true}}>
-    <Image
-   src={projets.image}
-   alt={projets.titre}
-   objectFit={'cover'}
-   w="100%"
-   h={{base:"180px",md:"200px"}}/>
-   <VStack align={'start'} spacing={3} p={5}>
-    <Text fontSize={'sm'} fontWeight={'bold'}>
-     {projets.titre}
-    </Text>
-    <Text fontSize={'sm'} fontWeight={'bold'}>
-     {projets.description}
-    </Text>
-    <Button
-    variant="link"
-    href={projets.link}
-    colorScheme="teal"
-    size="sm"
-    whileHover={{y:-3, boxShadow:"0px 6px 12px rgba('0,0,0,0.15')"}}
-    as={motion.button}
-    >
-    Voir le projet
-    </Button>
-   </VStack>
-  </MotionBox>
- ))}
-</HStack>
+<SimpleGrid mt={5} columns={{base:1,md:2,lg:3}} spacing={10}>
+    {projets.map((projet,index)=>(
+      <Box key={index} bg={'#FAF3C0'} shadow={'md'} overflow={'hidden'}  _hover={{shadow:"xl", transform:"scale(1.05)",transition:"0.5s"}}>
+       <Image src={projet.image} alt={projet.titre} w="100%" h="200px" objectFit={'cover'}/>
+       <Box p={6}>
+        <Heading fontSize={'xl'} mb={2}>{projet.titre}</Heading>
+        <Text color={'gray.600'} mb={4}>{projet.description}</Text>
+        <Link to={projet.link} color="teal" isExternal>Voir le projets</Link>
+       </Box>
+      </Box>
+    ))}
+   </SimpleGrid>
   </Box>
  )
 }

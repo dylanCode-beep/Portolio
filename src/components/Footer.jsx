@@ -20,48 +20,25 @@ export default function Footer(){
      <Stack align={{base:"center",md:"flex-start"}}>
       <Text fontWeight="600" mt={2}>Liens Rapides</Text>
       <Link to="/">Accueil</Link>
-      <Link to="/">A propos</Link>
-      <Link to="/">Portofolio</Link>
-      <Link to="/">Contacts</Link>
-      <Link to="/">Services</Link>
+      <Link to="/about">A propos</Link>
+      <Link to="/portfolio">Portofolio</Link>
+      <Link to="/#contacts">Contacts</Link>
+      <Link to="/services">Mes Services</Link>
      </Stack>
      <Stack align={{base:"center",md:"flex-start"}}>
       <Text fontWeight="600" mb={2}>Ressources</Text>
       <Link to="/">Blog</Link>
       <Link to="/">FAQ</Link>
       <Link to="/">Support</Link>
-      <Link to="/">Confidentialite</Link>
+      <Link to="/">Confidentialité</Link>
      </Stack>
 
      <Stack align={{base:"center",md:"flex-start"}}>
       <Text fontWeight="600" mb={2}>Suivez-Moi</Text>
       <HStack spacing={4}>
-       <IconButton
-       as={'a'}
-       size={'lg'}
-       to="#"
-       aria-label="github"
-       icon={<FaGithub  color='#F7FAFC'/>}
-       variant={'ghost'}
-       _hover={{color:"blue.600"}}/>
-
-      <IconButton
-       as={'a'}
-       size={'lg'}
-       to="#"
-       aria-label="Linkedin"
-       icon={<FaLinkedin color='#F7FAFC'/>}
-       variant={'ghost'}
-       _hover={{color:"blue.600"}}/>
-
-       <IconButton
-       as={'a'}
-       size={'lg'}
-       to="#"
-       aria-label="whatsapp"
-       icon={<FaWhatsapp  color='#F7FAFC'/>}
-       variant={'ghost'}
-       _hover={{color:"blue.600"}}/>
+      <a href='https://github.com/dylanCode-beep'><FaGithub/></a>
+      <a href=''><FaLinkedin/></a>
+      <a href="https://wa.me/23769619729"><FaWhatsapp/></a>
       </HStack>
      </Stack>
     </SimpleGrid>

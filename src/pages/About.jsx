@@ -13,22 +13,22 @@ export default function About(){
       Qui suis-je ?
      </Heading>
      <Text fontSize={'lg'} maxW={'2xl'}>
-      Salut 🖐, je suis <strong>Moukoko Nlom Dylan</strong>,developpeur fullstack junior
-      specialise en <strong>Laravel et React</strong>.
-      Titulaire d'un BTS en <strong> gestion des systemes d'information</strong> et actuellement
-      etudiant en Licence professionnel Genie Logiciel. Je concois des projets allant des sites e-commerce
-      aux applications desktop. Passionne par les technologies modernes, le design et les systemes embarques, 
-      je cherche a evoluer dans des envirronnements innovants.
+       🖐 Je suis un dévellopeur fullstack junior passionné par la création d'application web et
+      mobiles modernes. Curieux et polyvalent, j'aime concevoir des solutions qui allient
+      performances, design et expérience utilisateur.
+      Mon parcours m'a permis d'acquerir des solides compétences en developpement backend avec Laravel
+      et en frontend avec React.js. J'explore également le monde des systèmes 
+      embarqués et de l'IoT, ce qui nourrit ma vision d'un numerique connecté et innovant.
      </Text>
-     <VStack spacing={4}>
-      <Text fontSize={'md'}>
-        Competences: Laravel, ReactJS, React-Ntive, Ionic, Electon, figma, Chakra UI
-      </Text>
-      <Text fontSize={'md'}>
-        Obectifs: Trouver un stage ou une collaboration pour progresser
-        et contribuer a des proets ambitieux.
-      </Text>
-     </VStack>
+     <Text fontSize={'lg'} maxW={'2xl'}>
+     Motivé par l'envie d'apprendre et de reléver de nouveaux defis, je
+     m'investis dans des projets variés, allant d'application e-commerce a des solutions
+     Saas, et en passant par le developpement mobile et la gestion des bases de donnees
+     </Text>
+     <Text fontSize={'lg'} maxW={'2xl'}>
+      Mon objectif est simple: Transformer les idées en solutions technologiques concrètes qui apportent de la valeur aux utilisateurs
+      et aux entreprises
+     </Text>
      <Button 
      colorScheme="teal"
      size={'lg'}
