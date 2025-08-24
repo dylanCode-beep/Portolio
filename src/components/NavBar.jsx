@@ -35,6 +35,7 @@ export default function  NavBar() {
         aria-label='ouvrir menu' 
         display={{md:"none"}}
         onClick={isOpen ? onClose : onOpen}
+        _hover={'none'}
         />
       </Flex>
 
@@ -50,8 +51,7 @@ export default function  NavBar() {
           <a href='https://github.com/dylanCode-beep'><FaGithub/></a>
           <a href=''><FaLinkedin/></a>
         </HStack>
-        <Button w={'full'}>Connexion</Button>
-        <Button ml={6} as={'a'}  w={'full'} href='/login' size={'sm'} bg={"#1A3F80"} color={'white'} _hover={'none'} display={{base:"none",md:"flex"}}>Connexion</Button>
+        <Button as='a'  w={'full'} href='/login' size={'sm'} bg={"#1A3F80"} color={'white'} >Connexion</Button>
           </Stack>
         </Box>
       ):null}
